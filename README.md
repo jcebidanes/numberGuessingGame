@@ -38,3 +38,22 @@ To improve a litte bit the exibition message we change our code like below. Noti
     printf("*********************************\n");
     printf("* Wellcome to ours Gessing Game *\n");
     printf("*********************************\n");
+
+## Declare variables and interpolate *printf* and variable value.
+
+To declare a variable you need say what type and name this variable have.
+
+    ...
+        int secretNumber = 42;
+    ...
+
+Explain the code. *int* is variable type Integer. *secretNumber* is the variable name. The = (equal mark) means assignment all value after to variable and *42* is a integer value that will be put inside variable.
+
+Now to you print variable value together message it's needed to use interpolation like example below.
+
+    ...
+    printf(" This it's %d the secret number, don't say to anybody!\n", secretNumber );
+
+We put **%d** inside the message and add **,**(comma) with variable name after. Our program will be switch **%d** and put value assigned to variable. In this case *42*. Result will be.
+
+    This it's 42 the secret number, don't say to anybody!

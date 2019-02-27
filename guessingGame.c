@@ -6,4 +6,7 @@ int main() {
     printf("*********************************\n");
     printf("* Wellcome to ours Gessing Game *\n");
     printf("*********************************\n");
+
+    int secretNumber = 42;
+
 }
