@@ -57,3 +57,15 @@ Now to you print variable value together message it's needed to use interpolatio
 We put **%d** inside the message and add **,**(comma) with variable name after. Our program will be switch **%d** and put value assigned to variable. In this case *42*. Result will be.
 
     This it's 42 the secret number, don't say to anybody!
+
+## Getting guess number with user
+
+To get user guess we will use **scanf** command. But fisrt we will create a new variable to keep this user guess.
+
+    int userGuess;
+
+    printf("What's you guess? ");
+    scanf("%d", &userGuess);
+    printf("You guess are $d \n", userGuess);
+
+This code is the same we did before using *printf*. The newness is *scanf* command. Like printf we use **%d** to get what de user typed and put this value inside variable userGues. Notice before variable name we put **&**. This will be explain after, but per hour only put this **&** before variable.

@@ -9,4 +9,10 @@ int main() {
 
     int secretNumber = 42;
 
+    int userGuess;
+
+    printf("What's your guess? ");
+    scanf("%d", &userGuess); 
+    printf("You guess are %d \n", userGuess);
+
 }
