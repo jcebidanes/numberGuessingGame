@@ -19,12 +19,11 @@ int main() {
         printf("Congratulation! You hit the answer! \n");
     } else {
 
-        if(secretNumber > userGuess) {
-            printf("You hit are smaller the answer! \n");
-        }
-
-        if(secretNumber < userGuess) {
-            printf("You hit are bigger the answer! \n");
+        int smaller = secretNumber > userGuess;
+        if(smaller) {
+            printf("You guess are smaller the answer! \n");
+        } else {
+            printf("You guess are bigger the answer! \n");
         }
     }
 

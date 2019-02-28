@@ -110,9 +110,9 @@ Important: The *else* part is optional. You can use only *if* part and will work
 
 Now let's make our validation is the user hit or not our secret number.
 
-## Inform if the user hit was bigger or smaller that the secret number
+## Inform if the user guess was bigger or smaller that the secret number
 
-Let's help the user inform if your hit was bigger or smaller. To do it just perform create more validations inside the our else condition.
+Let's help the user inform if your guess was bigger or smaller. To do it just perform create more validations inside the our else condition.
 
     ...
     } else {
@@ -127,4 +127,19 @@ Let's help the user inform if your hit was bigger or smaller. To do it just perf
     }
     ...
 
-Every time user try they will received return about your hit and improve on the next time.
+Every time user try they will received return about your guess and improve on the next time.
+
+## Improve code semantic 
+
+This part we will do little changes to improve *"readability"* on our code.
+First, we will put conditional inside on variable with a good name.
+
+    ...
+    int hit = secretNumber == userGuess;
+
+    if (hit) {
+    ...
+
+This way we read perfectly our if.
+Other change is use the same behaivor inside the else part.
+
