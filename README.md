@@ -143,3 +143,15 @@ First, we will put conditional inside on variable with a good name.
 This way we read perfectly our if.
 Other change is use the same behaivor inside the else part.
 
+    ...
+    } else {
+
+        int smaller = secretNumber > userGuess;
+        if(smaller) {
+            printf("You guess are smaller the answer! \n");
+        } else {
+            printf("You guess are bigger the answer! \n");
+        }
+    }
+    ...
+
