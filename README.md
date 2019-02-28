@@ -87,7 +87,7 @@ To this part we will use **==**(Double equal mark). They work testing two values
     10 == 11   // resul -> false
     10 == 10   // resul -> true
 
-Of course we don't use only static values. O way is to use variables and test variables values.
+Of course we don't use only static values. A way is to use variables and test variables values.
 
     int valueX = 10;
     int valyeY = 11;
@@ -108,5 +108,23 @@ Important: The *else* part is optional. You can use only *if* part and will work
 
 ---
 
-Now let's make our validation is de user hit or not our secret number.
+Now let's make our validation is the user hit or not our secret number.
 
+## Inform if the user hit was bigger or smaller that the secret number
+
+Let's help the user inform if your hit was bigger or smaller. To do it just perform create more validations inside the our else condition.
+
+    ...
+    } else {
+
+        if(secretNumber > userGuess) {
+            printf("You hit are smaller the answer! \n");
+        }
+
+        if(secretNumber < userGuess) {
+            printf("You hit are bigger the answer! \n");
+        }
+    }
+    ...
+
+Every time user try they will received return about your hit and improve on the next time.

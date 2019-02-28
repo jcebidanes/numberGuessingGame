@@ -18,7 +18,14 @@ int main() {
     if(secretNumber == userGuess) {
         printf("Congratulation! You hit the answer! \n");
     } else {
-        printf("Try again! You don't hit the answer! \n");
+
+        if(secretNumber > userGuess) {
+            printf("You hit are smaller the answer! \n");
+        }
+
+        if(secretNumber < userGuess) {
+            printf("You hit are bigger the answer! \n");
+        }
     }
 
 }
