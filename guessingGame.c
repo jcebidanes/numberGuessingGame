@@ -19,6 +19,7 @@ int main() {
 
         if(secretNumber == userGuess) {
             printf("Congratulation! You hit the answer! \n");
+            break;
         } else {
 
             int smaller = secretNumber > userGuess;

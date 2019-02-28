@@ -178,3 +178,7 @@ One more thing we can improve is the *increment* part. We can exchange *i = i+1*
 Let's add a mesage with how many times user try discovery de secret number.  We will be use the variable *i* for that.
 
     printf("You have %d of 3 times \n", i);
+
+## STOP if user guess is correct before 3 times
+
+Resolve this is pretty easy. The *for* command have a extra command *break*. This command stop for loop independently if de stopTest finish. We will be put *break* after congratulation mensage.
