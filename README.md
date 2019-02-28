@@ -155,3 +155,26 @@ Other change is use the same behaivor inside the else part.
     }
     ...
 
+## Limit times to user try discovery secret number
+
+To this objective we will use a *loop operator*. Have many loop commands, but now we will use *for* command.
+
+    for( *inicialization* ; *stopTest* ; *increment* )
+
+Above you can see for struture like if, but with more parts. To ours game let's give 3 time to user discovery the correct answer.
+
+* Inicialization: Declare a variable to control in this part. To count who many times user try starting in 1. (e.g. int i = 1 )
+* StopTest: The stopTest will be did every time and when test is true the *for* stop repeat. Similar *if* test. (e.g. i <=3)
+* Increment: If test is false we will increase variable control value. This way after 3 times *i* will have value *3*. (e.g. i = i+1 ) 
+
+Mounting whole *for* command.
+
+    for(int i = 1 ;  i <=3 ; i = i+1){
+        // code here
+    }
+
+One more thing we can improve is the *increment* part. We can exchange *i = i+1* for *i++*. Both doing de same result.
+
+Let's add a mesage with how many times user try discovery de secret number.  We will be use the variable *i* for that.
+
+    printf("You have %d of 3 times \n", i);
