@@ -15,4 +15,10 @@ int main() {
     scanf("%d", &userGuess); 
     printf("You guess are %d \n", userGuess);
 
+    if(secretNumber == userGuess) {
+        printf("Congratulation! You hit the answer! \n");
+    } else {
+        printf("Try again! You don't hit the answer! \n");
+    }
+
 }

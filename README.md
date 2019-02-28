@@ -68,4 +68,45 @@ To get user guess we will use **scanf** command. But fisrt we will create a new 
     scanf("%d", &userGuess);
     printf("You guess are $d \n", userGuess);
 
-This code is the same we did before using *printf*. The newness is *scanf* command. Like printf we use **%d** to get what de user typed and put this value inside variable userGues. Notice before variable name we put **&**. This will be explain after, but per hour only put this **&** before variable.
+This code is the same we did before using *printf*. The newness is *scanf* command. Like printf we use **%d** to get what de user typed and put this value inside variable userGuess. Notice before variable name we put **&**. This will be explain after, but per hour only put this **&** before variable when to use *scanf*.
+
+## Testing if the user answer correctly or not
+
+This step we will use a **decesicion control statement** called *if* with *else* too.
+
+    if( *put condicional here* ) {
+        // if condicional is true
+    } else {
+        // if condicional is not true
+    }
+
+This code above show *if* and *else* struture. You need put a condicial sentence inside de brackets and if the result is true only the frist part will be executed, but if not true only the second part will be. We use *condicional operators* to validate condicional sentence. 
+
+To this part we will use **==**(Double equal mark). They work testing two values are or not equals. Example:
+
+    10 == 11   // resul -> false
+    10 == 10   // resul -> true
+
+Of course we don't use only static values. O way is to use variables and test variables values.
+
+    int valueX = 10;
+    int valyeY = 11;
+
+    if ( valueX == valueY ) {
+        printf(" X is equal Y ");
+    } else {
+        printf(" X not is equal Y ");
+    }
+
+---
+
+Important: The *else* part is optional. You can use only *if* part and will work every time the condicional is true.
+
+    if( *todayIsFriday* ) {
+        printf("Happy Friday!");
+    }
+
+---
+
+Now let's make our validation is de user hit or not our secret number.
+
